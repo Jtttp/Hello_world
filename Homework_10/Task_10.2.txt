@@ -1,0 +1,28 @@
+import math
+# import random 	не використовується програмою
+# from math import pi, e 	дублює import math
+
+
+my_number = 5
+count = int(input('Введите количество повторов: '))
+print(my_number * count)
+print(math.pi * my_number * count)
+print(math.e * 2)
+
+while my_number >= 0:
+    my_number -= 1
+
+my_str = 'my string'
+summary = 0
+
+for elem in my_str:
+    summary += pow(my_str.find(elem), 2)
+    print("sum=", summary)
+
+
+def my_func(atr=1):
+    """Функція my_func виводить значення аргументу atr"""
+    print('atr', atr)
+
+
+print(my_func(atr=5))
